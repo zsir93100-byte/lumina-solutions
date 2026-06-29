@@ -4,11 +4,6 @@ import { createAdminSupabase } from '@/lib/supabase/admin';
 
 const TO_EMAIL = process.env.CONTACT_EMAIL || 'hello@lumina.tech';
 
-function getResend() {
-  const { Resend } = require('resend') as typeof import('resend');
-  return new Resend(process.env.RESEND_API_KEY);
-}
-
 export interface ContactFormData {
   name: string;
   company?: string;
@@ -49,38 +44,33 @@ export async function submitContactForm(data: ContactFormData) {
   // 2. 发送邮件通知
   if (process.env.RESEND_API_KEY) {
     try {
-      await getResend().emails.send({
+      const { Resend } = await import('resend');
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      await resend.emails.send({
         from: `光澜科技 <noreply@${process.env.RESEND_DOMAIN || 'lumina.tech'}>`,
         to: TO_EMAIL,
         subject: `[官网咨询] 来自 ${data.name}${data.company ? ` (${data.company})` : ''} 的咨询`,
         replyTo: data.email,
-        html: buildContactEmailHtml(data),
+        html: buildHtml(data),
       });
     } catch (error) {
       console.error('Contact form email failed:', error);
-      // Email failure is non-fatal if DB write succeeded
     }
   }
 
   return { success: true };
 }
 
-function buildContactEmailHtml(d: ContactFormData) {
+function buildHtml(d: ContactFormData) {
   const row = (label: string, value: string | undefined) =>
     value
       ? `<tr><td style="padding:6px 12px 6px 0;color:#64748b;white-space:nowrap;vertical-align:top">${label}</td><td style="padding:6px 0;color:#1e293b">${value}</td></tr>`
       : '';
-
   return `
     <div style="font-family:system-ui,sans-serif;max-width:560px">
       <h2 style="color:#4f46e5;margin-bottom:16px">📬 新咨询来自光澜科技官网</h2>
       <table style="border-collapse:collapse;width:100%">
-        ${row('姓名', d.name)}
-        ${row('公司', d.company)}
-        ${row('邮箱', d.email)}
-        ${row('电话', d.phone)}
-        ${row('服务需求', d.service)}
-        ${row('预算', d.budget)}
+        ${row('姓名', d.name)}${row('公司', d.company)}${row('邮箱', d.email)}${row('电话', d.phone)}${row('服务需求', d.service)}${row('预算', d.budget)}
       </table>
       <div style="margin-top:16px;padding:16px;background:#f8fafc;border-radius:8px;border-left:3px solid #4f46e5">
         <p style="color:#64748b;font-size:12px;margin:0 0 4px">需求描述：</p>
