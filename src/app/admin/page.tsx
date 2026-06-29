@@ -3,6 +3,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 
+export const dynamic = 'force-dynamic';
+
 type Tab = 'contacts' | 'subscribers' | 'payments';
 
 export default function AdminPage() {
