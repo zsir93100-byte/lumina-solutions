@@ -1,10 +1,13 @@
 'use server';
 
-import { Resend } from 'resend';
 import { createAdminSupabase } from '@/lib/supabase/admin';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = process.env.CONTACT_EMAIL || 'hello@lumina.tech';
+
+function getResend() {
+  const { Resend } = require('resend') as typeof import('resend');
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 export interface ContactFormData {
   name: string;
@@ -46,7 +49,7 @@ export async function submitContactForm(data: ContactFormData) {
   // 2. 发送邮件通知
   if (process.env.RESEND_API_KEY) {
     try {
-      await resend.emails.send({
+      await getResend().emails.send({
         from: `光澜科技 <noreply@${process.env.RESEND_DOMAIN || 'lumina.tech'}>`,
         to: TO_EMAIL,
         subject: `[官网咨询] 来自 ${data.name}${data.company ? ` (${data.company})` : ''} 的咨询`,
