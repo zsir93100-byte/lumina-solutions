@@ -1,0 +1,514 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Work",
+    "blog": "Blog",
+    "contact": "Contact",
+    "freeConsult": "Free Consultation",
+    "brand": "Lumina Tech",
+    "brandSub": "LUMINA"
+  },
+  "footer": {
+    "about": "Lumina Solutions — your trusted digital partner for SMBs in China. We don't write fancy proposals. We deliver real, working systems.",
+    "services": "Services",
+    "webDev": "Web Development",
+    "mgmtSys": "Management Systems",
+    "cloudOps": "Cloud & DevOps",
+    "digitalConsult": "Digital Consulting",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "contactUs": "Contact Us",
+    "contactInfo": "Contact",
+    "phone": "400-888-9999",
+    "email": "hello@lumina.tech",
+    "address": "Luoyang · Luolong District",
+    "copyright": "© 2022–2026 Lumina Solutions. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "hero": {
+      "badge": "Serving 100+ SMBs in Luoyang & beyond",
+      "title": "Digital solutions that ",
+      "titleHighlight": "actually work for small business",
+      "subtitle": "We're not an outsourcing shop — we're your ",
+      "subtitleBold": "external tech team",
+      "subtitle2": ". From websites to management systems, consulting to operations — one team, all your tech needs.",
+      "cta1": "Book a Free Consultation",
+      "cta2": "See Our Work"
+    },
+    "services": {
+      "label": "Core Services",
+      "title": "Everything a small business needs, in one place",
+      "subtitle": "No need to hire a web agency, a software vendor, and an IT guy separately. We do it all.",
+      "detail": "Learn more",
+      "items": [
+        { "title": "Web Development", "desc": "Company sites, marketing pages, e-commerce platforms — from HTML/Tailwind to full-stack Next.js, perfectly responsive on every device." },
+        { "title": "Management Systems", "desc": "Inventory, CRM, ERP custom development — built on Supabase/PostgreSQL. Secure, scalable, vendor-independent." },
+        { "title": "Cloud & DevOps", "desc": "Server migration, CI/CD automation, SSL/backup/monitoring — keep your systems running 24/7." },
+        { "title": "Digital Consulting", "desc": "Architecture review, digital roadmap, team training — invest in the right direction from day one." }
+      ]
+    },
+    "whyUs": {
+      "label": "Why Lumina",
+      "title": "You don't lack technology. You lack a team that ",
+      "titleHighlight": "understands your business",
+      "desc": "We get the SMB struggle: tight budgets, changing requirements, no in-house CTO. We're not here to \"deliver code and leave\" — we're your long-term external tech department. Design, development, operations — one monthly retainer, one point of contact.",
+      "items": [
+        { "title": "Full stack, single contact", "desc": "No need to juggle designers, frontend devs, backend devs, and ops — one team handles everything." },
+        { "title": "Monthly retainer, flexible scope", "desc": "No long-term lock-in contracts. Adjust priorities as your business evolves, month by month." },
+        { "title": "Modern stack, no vendor lock-in", "desc": "All code is open source, deployed on your own cloud account. If we part ways, your systems keep running." }
+      ]
+    },
+    "techStack": {
+      "items": [
+        { "label": "HTML / Tailwind", "sub": "Responsive sites" },
+        { "label": "Next.js / React", "sub": "Web app framework" },
+        { "label": "Supabase / PG", "sub": "Backend & database" },
+        { "label": "CI/CD + DevOps", "sub": "Auto deployment" }
+      ]
+    },
+    "cases": {
+      "label": "Case Studies",
+      "title": "Real results we've delivered",
+      "viewAll": "View All Cases",
+      "preview": [
+        { "name": "Shengda Machinery", "industry": "Manufacturing", "tag": "Website + ERP Integration", "title": "Manufacturing site + order management system", "desc": "Built a company website and integrated ERP, boosting online order efficiency by 60%." },
+        { "name": "Zhixing Education", "industry": "Education", "tag": "Online Learning Platform", "title": "Online courses & student management for an education provider", "desc": "Built a platform supporting video courses, assignment submission, and class scheduling." },
+        { "name": "Xianfeng Chain", "industry": "Retail", "tag": "Brand Site + WeChat Store", "title": "Brand website & online store for a retail chain", "desc": "Brand site plus mini-program store for 15 locations — online sales grew 200% in 6 months." }
+      ]
+    },
+    "stats": [
+      { "num": "100+", "label": "Businesses Served" },
+      { "num": "15+", "label": "Industries Covered" },
+      { "num": "98%", "label": "Client Retention" },
+      { "num": "3 Years", "label": "Local Roots" }
+    ],
+    "clients": {
+      "label": "Trusted By",
+      "title": "100+ local businesses trust us",
+      "subtitle": "From manufacturing to retail, education to trading — every industry has our clients.",
+      "more": "More clients not shown due to NDAs — ",
+      "viewCases": "View detailed cases →",
+      "items": [
+        { "name": "Shengda Machinery", "industry": "Manufacturing" },
+        { "name": "Zhixing Education", "industry": "Education" },
+        { "name": "Xianfeng Chain", "industry": "Retail" },
+        { "name": "Hengtong Trading", "industry": "Trading" },
+        { "name": "Wanhua Chemical", "industry": "Chemical" },
+        { "name": "Dexin Commerce", "industry": "Commerce" },
+        { "name": "Ruifeng Agri", "industry": "Agriculture" },
+        { "name": "Mingyuan Logistics", "industry": "Logistics" },
+        { "name": "Jinxiu Apparel", "industry": "Apparel" },
+        { "name": "Tianyuan Construction", "industry": "Construction" },
+        { "name": "Baicao Pharma", "industry": "Pharma" },
+        { "name": "Oasis Catering", "industry": "Food & Beverage" }
+      ]
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Questions we get asked the most",
+      "subtitle": "8 common questions from SMBs. If you don't see yours, just contact us directly.",
+      "more": "Still have questions? ",
+      "contactLink": "Contact us directly →",
+      "items": [
+        { "q": "We're on a tight budget. Can we still go digital?", "a": "Absolutely. Digital transformation isn't all-or-nothing. We'll recommend the highest-impact module for your budget — start with a company website + basic CRM for as low as ¥3,000. Expand as your business grows. Good solutions aren't afraid of phased delivery." },
+        { "q": "What makes you different from a regular outsourcing company?", "a": "Three things. First, we don't just \"deliver code\" — we're your long-term tech partner with ongoing maintenance and iteration. Second, our stack is modern, open-source, and vendor-independent — the code is yours, deployed on your own cloud account. Third, monthly retainer instead of one-time contracts — pivot anytime. In short: we want to be your external CTO, not a one-and-done vendor." },
+        { "q": "Do you provide support after launch?", "a": "Absolutely. Launch is the beginning, not the end. We offer maintenance plans: server monitoring, daily database backups, auto SSL renewal, security scanning, 24/7 incident response. Every client has a dedicated support group — critical issues answered within 30 minutes." },
+        { "q": "I don't know tech. How do I explain my needs?", "a": "That's exactly our specialty. We're fluent in translating tech jargon into plain business language. The process is simple: tell us your business pain points (e.g. \"sales team quotes wrong prices\", \"customer info is a mess\", \"I want to sell online\"), and we'll turn them into technical solutions. No requirement doc needed — we'll guide you through it." },
+        { "q": "How much time and money for a website or system?", "a": "Depends on scope. Simple company site: 2–4 weeks, ¥3K–8K. Functional web app: 6–12 weeks, ¥15K–50K. Custom ERP/management system: 8–20 weeks, starts at ¥30K. These are reference ranges — after a free consultation, we'll give you a precise quote and timeline." },
+        { "q": "What if I want to stop mid-project?", "a": "We work on a monthly retainer — no long-term lock-in. If it's not a fit, give one month's notice. All code, databases, domains, and cloud accounts are your assets. We'll provide handover documentation so anyone can take over. Vendor lock-in is against our principles." },
+        { "q": "Can you build WeChat Mini Programs?", "a": "Yes. We do WeChat and Alipay mini-programs, fully integrated with your website and backend — one update, all platforms synced. A common setup: brand website + WeChat mini-program store + unified admin dashboard." },
+        { "q": "How do you handle data security?", "a": "All data is stored on Supabase (AWS-backed) or Alibaba Cloud, with automatic daily backups. Full HTTPS encryption in transit. Role-based access control in the admin panel (owner/manager/staff see different data). Row Level Security (RLS) at the database level prevents data leaks. You can export all your data anytime." }
+      ]
+    },
+    "cta": {
+      "title": "Not sure where to start?",
+      "subtitle": "Book a free 30-minute consultation. We'll help you clarify your needs and give you a ",
+      "subtitleBold": "practical, actionable proposal",
+      "subtitle2": ". No sales pitch. No charge.",
+      "button": "Book Your Free Consultation Now",
+      "call": "Call Directly"
+    }
+  },
+  "about": {
+    "header": {
+      "title": "About Lumina Tech",
+      "subtitle": "A tech team rooted in Luoyang, focused on one thing — helping SMBs use technology well."
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "From side hustle to pro team",
+      "p1": "In ",
+      "p1Year": "2022",
+      "p1Text": ", three people started Lumina Tech in a shared office in Luoyang's Luolong District. It began with building a website for a friend's company — but we quickly realized: these business owners aren't resistant to digital. They just never had someone explain technology in terms they could understand.",
+      "p2": "We're not the kind of vendor that \"disappears after launching the project.\" For every client, we treat ourselves as their ",
+      "p2Bold": "external CTO",
+      "p2Text": " — participating in requirements discussions, recommending the right solution (not the most expensive one), and reporting progress monthly.",
+      "p3": "Three years later, through word-of-mouth alone, we've served 100+ local businesses — from manufacturers to schools, retail chains to trading firms. Our team has grown from 3 to 15.",
+      "p4": "This website is a showcase of our technical capabilities."
+    },
+    "team": {
+      "label": "Core Team",
+      "title": "Every member is a full-stack engineer who ships independently",
+      "subtitle": "We don't hire code monkeys. Everyone here can handle everything from requirements to deployment.",
+      "members": [
+        { "initial": "C", "name": "Chen Yuan", "role": "Founder / Full-Stack", "desc": "Ex-Senior Engineer at a major tech company, 8 years of web development. Architecture + key accounts." },
+        { "initial": "Z", "name": "Zhou Ming", "role": "Co-founder / Backend", "desc": "Database architecture specialist, heavy Supabase/PostgreSQL user. Backend + DevOps." },
+        { "initial": "L", "name": "Lin Xi", "role": "Frontend / Design", "desc": "UX background, Tailwind/Figma expert. Interface design + frontend development." },
+        { "initial": "M", "name": "Ma Chao", "role": "Client Success / PM", "desc": "3 years of SMB consulting. Requirements gathering, project management, client relations." }
+      ]
+    },
+    "stack": {
+      "label": "Our Stack",
+      "title": "The technologies we use",
+      "subtitle": "Modern, open-source, vendor-independent. Code delivered to you, deployed on your own cloud.",
+      "categories": [
+        { "title": "Frontend & UI", "tags": ["HTML5/CSS3", "Tailwind CSS", "React", "Next.js", "TypeScript"] },
+        { "title": "Backend & Data", "tags": ["Supabase", "PostgreSQL", "Stripe Payments", "Node.js"] },
+        { "title": "Deploy & Ops", "tags": ["Vercel", "Docker", "GitHub CI/CD", "Alibaba Cloud"] }
+      ]
+    },
+    "timeline": [
+      { "year": "2022", "title": "Lumina Tech Founded", "desc": "3 people in a shared office in Luolong District. First client was a friend's manufacturing company." },
+      { "year": "2023", "title": "30+ Businesses Served", "desc": "Word-of-mouth growth expanded our client base from manufacturing to education and retail. Team grew to 7. Established standardized requirements and delivery processes." },
+      { "year": "2024", "title": "Full Stack Modernization", "desc": "Fully adopted Next.js + Supabase modern stack. Introduced CI/CD automated deployment. Started building enterprise management systems and ERP integrations." },
+      { "year": "2025", "title": "100+ Client Milestone", "desc": "Expanded to Zhengzhou and surrounding cities. Launched standardized products: online payments, admin dashboard. Team reached 12." },
+      { "year": "2026", "title": "Regional Leader", "desc": "Team of 15, covering 15 industries. Recommended as a digital service provider by multiple local chambers of commerce." }
+    ],
+    "values": {
+      "title": "What we believe",
+      "items": [
+        { "title": "No overselling", "desc": "We recommend the right solution, not the most expensive one." },
+        { "title": "Code is integrity", "desc": "We deliver maintainable engineering, not just features." },
+        { "title": "No lock-in", "desc": "The code is yours. Switch vendors anytime." },
+        { "title": "Plain language", "desc": "No jargon intimidation. If the boss understands it, it's a good plan." }
+      ]
+    }
+  },
+  "services": {
+    "header": {
+      "title": "Services",
+      "subtitle": "From websites to systems, consulting to operations — all your tech needs, one-stop solution."
+    },
+    "process": {
+      "label": "How We Work",
+      "title": "Transparent, efficient delivery",
+      "steps": [
+        { "step": "1", "title": "Discovery", "desc": "30-min free consultation to clarify needs" },
+        { "step": "2", "title": "Proposal & Quote", "desc": "Detailed proposal and quote within 3 business days" },
+        { "step": "3", "title": "Build & Ship", "desc": "2-week iterations, monthly progress reports" },
+        { "step": "4", "title": "Ongoing Ops", "desc": "Launch is just the beginning — long-term maintenance" }
+      ]
+    },
+    "pricing": {
+      "label": "Flexible Pricing",
+      "title": "Pick the plan that fits",
+      "subtitle": "All plans include a free discovery session. ¥500 deposit to lock in your slot.",
+      "starter": {
+        "name": "Starter",
+        "desc": "For small projects and MVPs",
+        "price": "¥300",
+        "unit": "starting",
+        "features": ["5-page company website", "Responsive design", "Basic SEO", "1 month support"],
+        "payLabel": "¥500 Deposit"
+      },
+      "pro": {
+        "name": "Professional",
+        "desc": "For growing businesses",
+        "badge": "Most Popular",
+        "price": "¥80K",
+        "unit": "starting",
+        "features": ["Full-featured web app", "CMS admin dashboard", "Payment & 3rd-party integrations", "3 months support", "CI/CD auto deployment"],
+        "payLabel": "¥500 Deposit"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "For large projects & long-term partnerships",
+        "price": "Custom",
+        "unit": "quote",
+        "features": ["Custom architecture design", "Dedicated project manager", "Unlimited feature iterations", "Year-round support", "SLA guarantee"],
+        "cta": "Contact Us"
+      }
+    },
+    "cta": {
+      "title": "Not sure which plan fits?",
+      "subtitle": "Free consultation. We'll analyze and advise. No sales pitch, just recommendations.",
+      "button": "Book Free Consultation →"
+    }
+  },
+  "projects": {
+    "header": {
+      "title": "Case Studies",
+      "subtitle": "Every case reflects a real business. Your industry might be next."
+    },
+    "items": [
+      {
+        "client": "Shengda Machinery",
+        "industry": "Manufacturing · Luoyang",
+        "tag": "Website + ERP Integration",
+        "title": "From zero to digital: A manufacturer's 3-year transformation",
+        "metrics": [
+          { "num": "60%", "label": "Online order efficiency increase" },
+          { "num": "45 days", "label": "From requirements to launch" },
+          { "num": "0", "label": "Major incidents post-launch" }
+        ],
+        "points": [
+          { "label": "Background: ", "text": "Shengda is an ¥80M manufacturing company. Customer inquiries relied on phone and WeChat. Order management was Excel-based. 200+ product SKUs meant sales staff frequently quoted the wrong prices." },
+          { "label": "Solution: ", "text": "Two-phase delivery — Phase 1: company website (product catalog + online inquiry). Phase 2: internal order management system integrated with production scheduling." },
+          { "label": "Tech Stack: ", "text": "Next.js + Tailwind CSS + Supabase (order database) + Stripe (deposit payments). Deployed on the client's own Alibaba Cloud account." },
+          { "label": "Result: ", "text": "Online inquiries doubled within 3 months. Information flow between sales and the shop floor went from \"WeChat group shouting\" to instant system notifications. The client said: \"Finally, no more late-night Excel scrolling.\"" }
+        ]
+      },
+      {
+        "client": "Zhixing Education",
+        "industry": "Education · Zhengzhou",
+        "tag": "Online Learning Platform",
+        "title": "How an education provider went digital and survived",
+        "metrics": [
+          { "num": "300+", "label": "Daily active learners" },
+          { "num": "85%", "label": "Course completion rate" },
+          { "num": "8 weeks", "label": "From contract to launch" }
+        ],
+        "points": [
+          { "label": "Background: ", "text": "Zhixing is a mid-sized training center in Zhengzhou. They relied on in-person classes + WeChat groups for materials. During the pandemic, student retention plummeted — they urgently needed an online course system." },
+          { "label": "Solution: ", "text": "Built an online learning platform supporting video courses, learner progress tracking, and homework submission/grading. Key requirement: non-technical teaching staff must be able to upload courses, schedule classes, and view student data without IT help." },
+          { "label": "Tech Stack: ", "text": "Next.js App Router + Supabase (student data + video assets) + Server Actions (homework submission). Admin interface built with Tailwind and detailed role-based permissions." },
+          { "label": "Result: ", "text": "Within 6 months, students grew from 80 offline to 300+ online. Course completion rate jumped from under 40% to 85% — because the system automatically alerts staff when a student is about to fall behind." }
+        ]
+      },
+      {
+        "client": "Xianfeng Chain",
+        "industry": "Retail · Luoyang",
+        "tag": "Brand Site + WeChat Store",
+        "title": "Brand digital upgrade for a retail chain",
+        "metrics": [
+          { "num": "200%", "label": "6-month online sales growth" },
+          { "num": "15", "label": "Stores unified" },
+          { "num": "3s", "label": "Avg page load time" }
+        ],
+        "points": [
+          { "label": "Background: ", "text": "Xianfeng operates 15 fresh food stores in Luoyang. Previously only had a WeChat Official Account for promotions — no brand website, no unified online store. Each store operated independently, customer data was scattered." },
+          { "label": "Solution: ", "text": "A brand website showcasing company image + product sourcing stories. Plus a WeChat mini-program store for online ordering with in-store pickup. Unified backend managing products, inventory, and orders across all 15 locations." },
+          { "label": "Tech Stack: ", "text": "Brand site: pure HTML + Tailwind static (Lighthouse 98). Mini-program store backend: Supabase + Stripe payments. Store management dashboard: Next.js." },
+          { "label": "Result: ", "text": "Online sales grew 200% within 6 months. SEO on the brand site pushed Xianfeng to top-3 local search results. The owner said: \"Customers used to think we were just a vegetable stand. Now we look like a real brand.\"" }
+        ]
+      },
+      {
+        "client": "Hengtong Trading",
+        "industry": "Trading · Luoyang",
+        "tag": "Company Website + CRM",
+        "title": "How a trading company stopped managing clients by memory",
+        "metrics": [
+          { "num": "500+", "label": "Client records unified" },
+          { "num": "70%", "label": "Follow-up efficiency increase" },
+          { "num": "2 weeks", "label": "Full team onboarding" }
+        ],
+        "points": [
+          { "label": "Background: ", "text": "Hengtong is an import/export trading company. 500+ client contacts were scattered across 6 sales reps' WeChat, Excel spreadsheets, and their own memories. The boss had no idea who was following up on what or which clients were about to be lost." },
+          { "label": "Solution: ", "text": "First, a company website showcasing credentials and product lines to build trust with overseas buyers. Second, a lightweight CRM — client profiles, follow-up records, quotation management, contract expiration reminders." },
+          { "label": "Tech Stack: ", "text": "Next.js + Supabase RLS (Row Level Security — each sales rep only sees their own client data). CI/CD via GitHub Actions auto-deploying to Alibaba Cloud." },
+          { "label": "Result: ", "text": "The boss can now check on his phone \"which sales rep hasn't followed up this week.\" Client data no longer disappears when a sales rep leaves. The website brought in 3 overseas inquiries after launch." }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Your industry could be our next case study",
+      "subtitle": "Book a free consultation. Tell us about your business. We don't charge for advice — we charge for trust.",
+      "button": "Start Your Project →"
+    }
+  },
+  "blog": {
+    "header": {
+      "title": "Tech Blog",
+      "subtitle": "Written for ourselves and our peers — thoughts on tech choices, project retrospectives, and SMB digitalization."
+    },
+    "featured": {
+      "badge": "Featured · Tech Decisions",
+      "title": "HTML+Tailwind or Next.js for SMBs? A decision framework",
+      "desc": "There's no silver bullet. This article provides a practical decision matrix based on your budget, team capabilities, and long-term plans.",
+      "date": "2026-06-25",
+      "read": "10 min read"
+    },
+    "search": "Search articles…",
+    "allArticles": "All Articles",
+    "results": "Found",
+    "resultsFor": "results for",
+    "noResults": "No articles found",
+    "noResultsHint": "Try different keywords or tag filters.",
+    "clearAll": "Clear all filters",
+    "filters": "Filters",
+    "articles": [
+      { "tag": "Performance", "title": "Core Web Vitals in practice: optimizing a manufacturer's site from 60 to 95", "desc": "A real project retrospective: image optimization, font loading, code splitting — quantifiable gains at every step.", "date": "2026-06-25", "read": "8 min" },
+      { "tag": "Backend", "title": "Getting started with Supabase: why we recommend it for SMB projects", "desc": "Full PostgreSQL power + instant API + row-level security — you can be productive in a weekend.", "date": "2026-06-18", "read": "7 min" },
+      { "tag": "Payments", "title": "Stripe integration: an explainer for non-technical clients", "desc": "How do you explain Webhooks to a business owner? This article is meant to be forwarded.", "date": "2026-06-12", "read": "5 min" },
+      { "tag": "Frontend", "title": "Tailwind responsive design: one codebase from phone to desktop", "desc": "Systematically building responsive pages with sm:/md:/lg: breakpoints — say goodbye to CSS media query hell.", "date": "2026-06-08", "read": "6 min" },
+      { "tag": "Tech Choices", "title": "Server Actions changed how I do full-stack development", "desc": "No more API Routes needed — Server Actions let you keep form submission logic in the same file as the UI.", "date": "2026-06-02", "read": "12 min" },
+      { "tag": "Client Stories", "title": "A factory owner's digital transformation journey", "desc": "From \"I don't need a website\" to \"this system saved us\" — a real client interview.", "date": "2026-05-28", "read": "4 min" },
+      { "tag": "Security", "title": "SMB website security checklist: 12 must-do checks", "desc": "SSL certificates, SQL injection prevention, XSS defense, sensitive data exposure — audit your site item by item.", "date": "2026-05-20", "read": "9 min" },
+      { "tag": "DevOps", "title": "CI/CD from scratch: GitHub Actions + Vercel beginner tutorial", "desc": "Push code → auto deploy — the simplest configuration for developers who don't do ops.", "date": "2026-05-15", "read": "7 min" },
+      { "tag": "Frontend", "title": "CSS Grid vs Flexbox: which one for your SMB website layout?", "desc": "A decision flowchart to help you pick quickly — most cases don't need Grid.", "date": "2026-05-10", "read": "5 min" },
+      { "tag": "Tech Choices", "title": "Recommended SMB tech stack for 2026: what we actually use", "desc": "Next.js + Supabase + Stripe + Resend — one combo for website, backend, payments, and email.", "date": "2026-05-05", "read": "11 min" },
+      { "tag": "Backend", "title": "Sending transactional emails with Resend: a modern alternative to SMTP", "desc": "Stop wrestling with mail server config — Resend SDK sends emails in 5 lines, with templates and tracking.", "date": "2026-04-28", "read": "6 min" },
+      { "tag": "Client Stories", "title": "How an education provider grew from 80 to 300+ students: a growth retrospective", "desc": "Zhixing Education's real case: it's not just technology — it's also operations strategy and user habit building.", "date": "2026-04-20", "read": "8 min" }
+    ],
+    "newsletter": {
+      "title": "📬 Tech Newsletter",
+      "desc": "One email per month sharing our technical practices and lessons learned in SMB digitalization. Not frequent. No fluff.",
+      "placeholder": "your@email.com",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing…",
+      "subscribed": "Subscribed ✓",
+      "success": "Subscribed successfully!",
+      "error": "Subscription failed"
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Contact Us",
+      "subtitle": "Got a project? Or just want to chat? We're here."
+    },
+    "form": {
+      "title": "Send a Message",
+      "subtitle": "Fill out the form and we'll reply within 24 hours. Or just call us.",
+      "name": "Name",
+      "nameRequired": "*",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Company name (optional)",
+      "email": "Email",
+      "emailRequired": "*",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone",
+      "phonePlaceholder": "So we can reach you",
+      "service": "Service interested in",
+      "servicePlaceholder": "Select…",
+      "serviceOptions": ["Web Development", "Management Systems", "Cloud & DevOps", "Digital Consulting", "Other / Not Sure"],
+      "budget": "Budget Range",
+      "budgetPlaceholder": "Select…",
+      "budgetOptions": ["Under ¥10K", "¥10K - 50K", "¥50K - 150K", "¥150K+", "Not Sure"],
+      "message": "Briefly describe your needs",
+      "messageRequired": "*",
+      "messagePlaceholder": "E.g.: Need a company website + product management system; or: Want to build an online course platform for an education provider… the more specific, the better.",
+      "send": "Send Message",
+      "sending": "Sending…",
+      "sent": "Sent",
+      "success": "✓ Sent successfully! We'll get back to you soon.",
+      "error": "Please fill in your name, email, and message."
+    },
+    "info": {
+      "title": "Direct Contact",
+      "subtitle": "You can also reach us directly.",
+      "items": [
+        { "label": "Phone", "value": "400-888-9999", "note": "Mon–Fri 9:00–18:00" },
+        { "label": "Email", "value": "hello@lumina.tech" },
+        { "label": "WeChat", "value": "LuminaTech2022", "note": "Please mention \"Consultation\" when adding" },
+        { "label": "Address", "value": "Luolong District, Luoyang, Henan", "note": "No. 288 Kaiyuan Avenue · Innovation Center 12F" }
+      ]
+    },
+    "hours": {
+      "title": "Working Hours",
+      "weekday": "Mon–Fri",
+      "weekdayTime": "9:00 – 18:00",
+      "saturday": "Saturday",
+      "saturdayTime": "10:00 – 16:00",
+      "sunday": "Sunday & Holidays",
+      "sundayNote": "Call for urgent needs",
+      "urgent": "Urgent"
+    },
+    "map": {
+      "title": "Luolong District, Luoyang · Innovation Center 12F",
+      "address": "No. 288 Kaiyuan Avenue",
+      "openInMap": "Open in AMap",
+      "parking": "Free parking downstairs · Bus routes 12/25/60"
+    },
+    "promise": {
+      "title": "Free Consultation Promise",
+      "items": [
+        "30-minute free discovery session",
+        "No consulting fees, no hard sell",
+        "If it's a fit, a proposal within 3 business days",
+        "If it's not a fit, we'll tell you honestly"
+      ]
+    }
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "subtitle": "Lumina Tech Internal System",
+    "email": "Email",
+    "emailPlaceholder": "admin@lumina.tech",
+    "password": "Password",
+    "login": "Login",
+    "logout": "Logout",
+    "brand": "Lumina Tech · Admin",
+    "tabs": {
+      "contacts": "Inquiries",
+      "subscribers": "Subscribers",
+      "payments": "Payments"
+    },
+    "table": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "service": "Service",
+      "budget": "Budget",
+      "time": "Time",
+      "status": "Status",
+      "subscribedTime": "Subscribed",
+      "session": "Session",
+      "plan": "Plan",
+      "amount": "Amount",
+      "customerEmail": "Customer Email",
+      "loading": "Loading…",
+      "noData": { "contacts": "No inquiries yet", "subscribers": "No subscribers yet", "payments": "No payments yet" }
+    }
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": {
+      "title": "Something went wrong",
+      "message": "An unexpected error occurred while loading this page. Please try refreshing.",
+      "refresh": "Refresh Page",
+      "contact": "If the problem persists, contact us at"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for may have been removed, the link may be misspelled, or it's temporarily unavailable.",
+      "backHome": "Back to Home",
+      "contact": "Contact Us",
+      "tryPages": "Or try these popular pages:"
+    },
+    "payment": {
+      "success": {
+        "title": "Payment Successful!",
+        "message": "Thank you for your order. Our team will contact you within ",
+        "messageBold": "1 business day",
+        "messageEnd": " to confirm requirements and schedule project kickoff.",
+        "emailSent": "Confirmation email has been sent to your inbox",
+        "urgent": "Need it faster? Call ",
+        "hours": "Working hours: Mon–Fri 9:00–18:00",
+        "backHome": "Back to Home",
+        "moreCases": "See More Cases"
+      }
+    },
+    "thankYou": {
+      "title": "Message Sent!",
+      "message": "Thank you for reaching out. Our team will reply within ",
+      "messageBold": "24 hours",
+      "messageEnd": " via email or phone.",
+      "hours": "Working hours: Mon–Fri 9:00–18:00",
+      "emailNote": "Confirmation email sent to your inbox (check spam if not received)",
+      "urgent": "Need it faster? Call ",
+      "backHome": "Back to Home",
+      "readBlog": "Read Our Blog"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: June 1, 2026",
+      "content": "<p>This is a summary placeholder. For the full privacy policy text tailored to your jurisdiction, please consult a legal professional or see the Chinese version at /zh/privacy.</p>"
+    }
+  }
+}
