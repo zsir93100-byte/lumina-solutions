@@ -86,7 +86,7 @@ export default function ServicesPage() {
             <div className="bg-white p-8 rounded-2xl border border-slate-200">
               <h3 className="text-xl font-bold mb-2">起步版</h3>
               <p className="text-slate-400 text-sm mb-4">适合小型项目与 MVP 验证</p>
-              <div className="text-4xl font-extrabold mb-6">¥30K<span className="text-sm text-slate-400 font-normal"> 起</span></div>
+              <div className="text-4xl font-extrabold mb-6">¥300<span className="text-sm text-slate-400 font-normal"> 起</span></div>
               <ul className="space-y-3 text-sm text-slate-500 mb-8">
                 <li><i className="fa-solid fa-check text-emerald-500 mr-2" />5 页企业官网</li>
                 <li><i className="fa-solid fa-check text-emerald-500 mr-2" />响应式设计</li>
