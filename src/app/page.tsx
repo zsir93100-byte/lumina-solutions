@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export default function HomePage() {
   return (
@@ -187,6 +188,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ========== 客户墙 ========== */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <span className="text-lumina-600 font-semibold text-sm tracking-wider uppercase">他们信任我们</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">100+ 家本地企业的共同选择</h2>
+            <p className="text-slate-500 max-w-lg mx-auto">从制造业到零售，从教育到贸易 — 每个行业都有我们的客户。</p>
+          </AnimatedSection>
+
+          {/* Logo grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {clients.map((c, i) => (
+              <AnimatedSection key={c.name} delay={i * 0.04}>
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 text-center hover:border-lumina-200 hover:shadow-md transition-all h-full flex flex-col items-center justify-center gap-2">
+                  <div className={`w-10 h-10 ${c.bg} rounded-lg flex items-center justify-center`}>
+                    <i className={`${c.icon} ${c.color}`} />
+                  </div>
+                  <span className="text-sm font-semibold text-slate-700">{c.name}</span>
+                  <span className="text-xs text-slate-400">{c.industry}</span>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection className="text-center mt-10">
+            <p className="text-slate-400 text-sm">
+              还有更多客户由于保密协议未在此展示 —{' '}
+              <Link href="/projects" className="text-lumina-600 font-medium hover:underline">
+                查看详细案例 →
+              </Link>
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ========== FAQ ========== */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <span className="text-lumina-600 font-semibold text-sm tracking-wider uppercase">常见问题</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">你关心的，我们都整理好了</h2>
+            <p className="text-slate-500 max-w-xl mx-auto">中小企业最常问的 8 个问题。如果没有你需要的答案，直接联系我们。</p>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <FaqAccordion items={faqs} />
+          </AnimatedSection>
+          <AnimatedSection className="text-center mt-10">
+            <p className="text-slate-500 text-sm">
+              还有其他问题？{' '}
+              <Link href="/contact" className="text-lumina-600 font-semibold hover:underline">
+                直接联系我们 →
+              </Link>
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ========== CTA ========== */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto text-center px-4">
@@ -279,4 +337,54 @@ const stats = [
   { num: '15+', label: '行业覆盖' },
   { num: '98%', label: '客户续约率' },
   { num: '3年', label: '深耕本地' },
+];
+
+const clients = [
+  { name: '盛达机械', industry: '制造业', bg: 'bg-slate-100', color: 'text-slate-600', icon: 'fa-solid fa-industry' },
+  { name: '知行教育', industry: '教育', bg: 'bg-lumina-100', color: 'text-lumina-600', icon: 'fa-solid fa-graduation-cap' },
+  { name: '鲜丰连锁', industry: '零售', bg: 'bg-emerald-100', color: 'text-emerald-600', icon: 'fa-solid fa-store' },
+  { name: '恒通贸易', industry: '贸易', bg: 'bg-purple-100', color: 'text-purple-600', icon: 'fa-solid fa-chart-line' },
+  { name: '万华化工', industry: '化工', bg: 'bg-amber-100', color: 'text-amber-600', icon: 'fa-solid fa-flask' },
+  { name: '德信商贸', industry: '商贸', bg: 'bg-blue-100', color: 'text-blue-600', icon: 'fa-solid fa-handshake' },
+  { name: '瑞丰农业', industry: '农业', bg: 'bg-green-100', color: 'text-green-600', icon: 'fa-solid fa-seedling' },
+  { name: '明远物流', industry: '物流', bg: 'bg-orange-100', color: 'text-orange-600', icon: 'fa-solid fa-truck-fast' },
+  { name: '锦绣服饰', industry: '服装', bg: 'bg-pink-100', color: 'text-pink-600', icon: 'fa-solid fa-shirt' },
+  { name: '天元建筑', industry: '建筑', bg: 'bg-slate-200', color: 'text-slate-700', icon: 'fa-solid fa-hard-hat' },
+  { name: '百草药业', industry: '医药', bg: 'bg-red-100', color: 'text-red-600', icon: 'fa-solid fa-capsules' },
+  { name: '绿洲餐饮', industry: '餐饮', bg: 'bg-yellow-100', color: 'text-yellow-600', icon: 'fa-solid fa-utensils' },
+];
+
+const faqs = [
+  {
+    q: '我们预算有限，能做数字化吗？',
+    a: '当然可以。数字化不是"全做或不做"的选择。我们会根据你的实际预算，给你推荐最值得先做的模块。比如起步可以先做一个企业官网 + 基础 CRM，成本控制在 ¥30K 以内。后续根据业务增长再逐步扩展。好方案不怕分阶段落地。',
+  },
+  {
+    q: '你们和普通外包公司有什么不同？',
+    a: '三个核心区别：第一，我们不只"交付代码"，而是做长期技术伙伴—上线后持续运维和迭代；第二，技术栈现代、开源、不绑定厂商，代码全交给你，部署在你自己的云账号上；第三，按月合作而非一次性合同，随时可以调整方向。说白了，我们想做你的编外 CTO，不是一次性乙方。',
+  },
+  {
+    q: '网站/系统上线后，你们还管吗？',
+    a: '管。上线不是结束，而是长期合作的开始。我们提供运维套餐：服务器监控、数据库自动备份、SSL 证书自动续签、安全漏洞扫描、7×24 故障响应。所有客户都有专属的技术支持群，紧急问题 30 分钟内响应。',
+  },
+  {
+    q: '我不懂技术，怎么跟你们沟通需求？',
+    a: '这正是我们的专长。我们擅长把技术术语翻译成老板能听懂的话。流程很简单：你只需要告诉我们你的业务痛点（比如"销售报错价""客户信息乱""想在网上卖东西"），我们帮你转换成技术方案。不需要你写需求文档，我们会引导你一步步理清需求。',
+  },
+  {
+    q: '做一个网站 / 系统要多久？多少钱？',
+    a: '看具体需求。简单企业官网：2-4 周，¥15K-30K；功能型 Web 应用：6-12 周，¥50K-150K；定制 ERP/管理系统：8-20 周，¥80K 起。以上是参考范围，免费咨询后我们会给你一个精确的报价和时间表。',
+  },
+  {
+    q: '如果合作中途我想停止，怎么办？',
+    a: '我们是按月合作模式，没有长期绑定合同。如果你觉得不合适，提前一个月通知即可终止。所有代码、数据库、域名、云账号都是你自己的资产，我们帮你做好交接文档，保证你随时可以找其他团队接手。不锁客户是我们的底线。',
+  },
+  {
+    q: '你们能做微信小程序吗？',
+    a: '可以。我们提供微信小程序和支付宝小程序开发，而且可以和你的官网、后台管理系统数据互通 — 一次更新，多端同步。常见方案是：品牌官网 + 微信小程序商城 + 统一后台管理。',
+  },
+  {
+    q: '数据安全怎么保证？',
+    a: '所有数据存储在 Supabase（基于 AWS）或阿里云上，自动每日备份。传输层全 HTTPS 加密。管理后台支持多级权限控制（老板 / 经理 / 员工看不同数据）。代码层面启用 Row Level Security（行级安全），从数据库层面防止数据泄露。你可以随时导出全部数据。',
+  },
 ];

@@ -45,6 +45,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-slate-200 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-slate-400">
           <span>&copy; 2022–2026 光澜科技 Lumina Solutions. All rights reserved.</span>
+          <Link href="/privacy" className="hover:text-lumina-600 transition-colors">隐私政策</Link>
           <div className="flex gap-4">
             <a href="#" className="hover:text-lumina-600 transition-colors"><i className="fa-brands fa-weixin" /></a>
             <a href="#" className="hover:text-lumina-600 transition-colors"><i className="fa-brands fa-github" /></a>

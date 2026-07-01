@@ -47,6 +47,55 @@ export default function ContactPage() {
                 ))}
               </div>
 
+              {/* Working Hours */}
+              <div className="mt-6 p-5 bg-white border border-slate-200 rounded-xl">
+                <h3 className="font-semibold text-sm flex items-center gap-2 mb-3">
+                  <i className="fa-solid fa-clock text-lumina-600" />
+                  工作时间
+                </h3>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="bg-slate-50 p-3 rounded-lg">
+                    <div className="text-slate-500 text-xs mb-0.5">周一至周五</div>
+                    <div className="font-semibold text-slate-700">9:00 – 18:00</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg">
+                    <div className="text-slate-500 text-xs mb-0.5">周六</div>
+                    <div className="font-semibold text-slate-700">10:00 – 16:00</div>
+                  </div>
+                  <div className="bg-slate-50 p-3 rounded-lg col-span-2">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="text-slate-500 text-xs mb-0.5">周日 & 节假日</div>
+                        <div className="font-semibold text-slate-700">紧急需求请致电</div>
+                      </div>
+                      <span className="bg-amber-100 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-full">
+                        <i className="fa-solid fa-bolt mr-1" />加急通道
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Map placeholder */}
+              <div className="mt-6 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl p-6 border border-slate-200 text-center">
+                <div className="text-4xl mb-3">
+                  <i className="fa-solid fa-map-location-dot text-lumina-400" />
+                </div>
+                <h3 className="font-bold text-sm mb-1">洛阳市洛龙区 · 科创中心 12F</h3>
+                <p className="text-slate-400 text-xs mb-3">开元大道 288 号</p>
+                <a
+                  href="https://uri.amap.com/marker?position=112.459,34.618&name=光澜科技"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-white border border-slate-300 text-slate-700 text-sm px-4 py-2 rounded-lg hover:border-lumina-300 hover:text-lumina-600 transition-colors font-medium"
+                >
+                  <i className="fa-solid fa-location-arrow" /> 在高德地图中打开
+                </a>
+                <p className="text-slate-400 text-xs mt-3">
+                  楼下有免费停车位 · 公交 12/25/60 路可达
+                </p>
+              </div>
+
               <div className="mt-8 bg-gradient-to-br from-lumina-50 to-amber-50 border border-lumina-100 p-6 rounded-2xl">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">

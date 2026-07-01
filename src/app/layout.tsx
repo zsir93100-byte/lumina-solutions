@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     siteName: '光澜科技',
     locale: 'zh_CN',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: '光澜科技 Lumina Solutions — 中小企业数字化升级伙伴',
+      },
+    ],
   },
   robots: {
     index: true,
